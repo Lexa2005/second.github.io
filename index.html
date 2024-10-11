@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<body bgcolor="yellow">
+    <h1 id="greeting">Введите ваше имя</h1>
+    <input type="text" id="inputText" placeholder="Введите имя">
+    <button id="submitButton">Подтвердить</button>
+    <h2 id="congratulations" style="display: none;"></h2>
+
+    <script>
+        // Получаем элементы
+        const inputText = document.getElementById('inputText');
+        const greeting = document.getElementById('greeting');
+        const submitButton = document.getElementById('submitButton');
+        const congratulations = document.getElementById('congratulations');
+
+        // Добавляем обработчик события на кнопку
+        submitButton.onclick = function() {
+            const name = inputText.value; // Получаем введенное имя
+            if (name) {
+                greeting.innerText = name; // Меняем текст в h1 на введенное имя
+                congratulations.innerText = `Поздравляем, ${name}!`; // Добавляем имя к поздравлению
+                congratulations.style.display = 'block'; // Показываем поздравление
+            }
+        };
+    </script>
+</body>
+</html>
