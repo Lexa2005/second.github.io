@@ -1,0 +1,36 @@
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.calculator {
+    width: 50vw;
+    height: ;
+    margin: 0 auto;
+}
+
+input {
+    width: 100%;
+    text-align: end;
+    font-size: 48px;
+}
+
+body {
+    display: flex;
+    background-color: green;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+button {
+    font-size: 82px;
+    color: blue;
+    border-radius: 10px;
+    background-color: rgb(187, 255, 0);
+}
+
+button:hover {
+    background-color: #9aff9f; /* Цвет кнопки при наведении */
+}
