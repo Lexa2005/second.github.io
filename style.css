@@ -35,3 +35,8 @@ h1 {
 .post p {
     color: #555;
 }
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
